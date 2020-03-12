@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+
+
+html, body{font: 16px 'Open Sans', Sans-serif;
+    margin: 0;
+}
+
+h1,h2{
+    margin:0;
+    font-weight:300;
+}
+a{
+    text-decoration: none;
+    color:#222;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-default :#ccc;
+    --color-primary:rgba(52, 152, 219,1.0);
+    --color-warning:rgba(231, 76, 60,1.0);
+    --color-success:rgba(46, 204, 113,1.0);
+}
+
+main,header,footer,nav{
+    max-width: 800px;
+    margin: 0 auto;
+    border: solid 1px transparent;
+    background: rgba(255,255,255,0.8);
+    padding:10px;
+    
+}
+
+header h1, section h2, nav h2{
+    font-family: 'Zhi Mang Xing';
+    text-transform: capitalize;
+}
+header h1{
+
+    line-height: 60px;
+    text-align: center;
+background-color: #fafafa;
+    color: #222;
+    text-transform: capitalize;
+
+}
+header h1::before{
+    content:"\2605";
+    vertical-align:middle;
+    margin-right: 10px;
+    color:var(--color-warning);
+}
+html{
+    background: url(../asset/back.png)no-repeat fixed center center /cover;
+    scroll-behavior: smooth;
+    
+}
+nav h2,section h2{
+    background: var(--color-primary);
+    box-shadow: 0 3px 0 #ccc;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+nav ol{
+line-height: 1.5rem;
+margin-top: 10px;
+}
+section{
+    margin-bottom: 10px;
+}
+section >h2::after{
+    content: '\203A';
+    font-family: 'font awesome 5 brands';
+    margin-right: 5px;
+}
+section p{ 
+    line-height: 1.5rem;
+    margin:10px 0;
+    text-align: justify;
+}
+section p > img{
+    display: block;
+    width: 100%;
+}
+section >.bookmark{
+    transition-duration: 0.8s;
+}
+footer{
+    text-align: center;
+}
